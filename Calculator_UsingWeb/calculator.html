@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Scientific Calculator</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+  <!-- <p class="cal">Calculator</p> -->
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <table>
+      <tr>
+        <td><button onclick="clearResult()">C</button></td>
+        <td><button onclick="removeLastChar()">&#9003;</button></td>
+        <td><button onclick="appendExpression('(')">(</button></td>
+        <td><button onclick="appendExpression(')')">)</button></td>
+      </tr>
+      <tr>
+      <td><button onclick="appendExpression('7')">7</button></td>
+      <td><button onclick="appendExpression('8')">8</button></td>
+      <td><button onclick="appendExpression('9')">9</button></td>
+      <td><button onclick="appendExpression('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendExpression('4')">4</button></td>
+        <td><button onclick="appendExpression('5')">5</button></td>
+        <td><button onclick="appendExpression('6')">6</button></td>
+        <td><button onclick="appendExpression('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendExpression('1')">1</button></td>
+        <td><button onclick="appendExpression('2')">2</button></td>
+        <td><button onclick="appendExpression('3')">3</button></td>
+        <td><button onclick="appendExpression('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendExpression('0')">0</button></td>
+        <td><button onclick="appendExpression('Math.exp(')">e</button></td>
+        <td><button onclick="appendExpression('.')">.</button></td>
+        <td><button onclick="appendExpression('+')">+</button></td>
+      </tr>
+      <tr>
+        <td ><button onclick="appendExpression('Math.log(')">ln</button></td>
+        <td><button onclick="appendExpression('Math.LN10(')">log</button></td>
+        <td><button onclick="appendExpression('Math.sqrt(')">sqrt</button></td>
+        <td ><button onclick="appendExpression('Math.PI')">π</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendExpression('Math.sin(')">sin</button></td>
+        <td><button onclick="appendExpression('Math.cos(')">cos</button></td>
+        <td><button onclick="appendExpression('Math.tan(')">tan</button></td>
+        <td><button onclick="calculate()">=</button></td>
+      </tr>
+      
+    </table>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>

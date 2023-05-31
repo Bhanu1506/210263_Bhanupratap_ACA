@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(202, 224, 212);
+}
+
+.calculator {
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-style: solid;
+    border-color: rgb(17, 39, 39);
+    background-color: rgb(80, 96, 96);
+    border-radius: 8px;
+    
+  }
+  
+  table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  button{
+    font-size: 23px;
+    background-color: rgb(240, 240, 234);
+
+  }
+  
+  table td {
+    padding: 20px;
+  }
+  
+  input[type="text"] {
+    background-color: rgb(240, 240, 234);
+    width: 88.5%;
+    padding: 15px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 8px;
+  }
+  
